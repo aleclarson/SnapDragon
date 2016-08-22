@@ -1,0 +1,10 @@
+{
+  "name": "SnapDragon",
+  "version": "1.0.0",
+  "main": "js/SnapDragon",
+  "lotus": {
+    "plugins": [
+      "lotus-coffee"
+    ]
+  }
+}
