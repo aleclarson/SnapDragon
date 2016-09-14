@@ -22,9 +22,10 @@ type.defineFrozenValues
       shouldCaptureOnStart: @_shouldCaptureOnStart
 
   _offset: (options) ->
-    if options.clamp then NativeValue =>
+    return @_drag.offset if not options.clamp
+    offset = NativeValue =>
       clampValue @_drag.offset.value, 0, @maxOffset
-    else @_drag.offset
+    return offset.__attach()
 
 type.initInstance (options) ->
   if options.index?
