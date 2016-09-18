@@ -10,6 +10,11 @@
     "postinstall": "postinstall-build js 'npm run build'"
   },
   "dependencies": {
+    "Draggable": "aleclarson/Draggable#2.0.0",
+    "Snappable": "aleclarson/Snappable#1.0.0",
+    "Type": "aleclarson/Type#2.0.0",
+    "clampValue": "aleclarson/clampValue#1.0.0",
+    "modx": "aleclarson/modx#1.0.0",
     "postinstall-build": "0.2.x"
   },
   "devDependencies": {
